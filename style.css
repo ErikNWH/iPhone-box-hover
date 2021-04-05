@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #f1f1f1f1;
+}
+
+.center {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  transform: perspective(500px) rotate(-40deg) skew(25deg);
+  background: rgb(21, 21, 21) url(img/iphone11back.png) 50% 50% no-repeat;
+  box-shadow: -90px 75px 20px rgba(0, 0, 0, .3);
+  background-size: 350px;
+  transition: .5s;
+}
+
+
+
+.box:before
+{
+    content: "";
+    width: 90px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: skewY(-40deg) translate(-90px, -38px);
+    background: #222 url(img/apple-black.png) 50% 50% no-repeat;
+    background-size: 40px;
+
+}
+
+.box::after
+{
+    content: "";
+    width: 100%;
+    height: 76px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: skewX(-50deg) translate(45px, 76px);
+    background: rgb(24, 24, 24) url(img/IPhone-text.png) 50% 50% no-repeat;
+    background-size: 90px;   
+}
+
+.box:hover {
+  transform: perspective(500px) rotate(-40deg) skew(25deg) translate(50px, -50px);
+  box-shadow: -150px 115px 100px rgba(0, 0, 0, .3);
+}
