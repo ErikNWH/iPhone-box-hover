@@ -33,7 +33,7 @@ body {
     top: 0;
     left: 0;
     transform: skewY(-40deg) translate(-90px, -38px);
-    background: #222 url(img/apple-black.png) 50% 50% no-repeat;
+    background: #222 url(img/842px-Apple_logo_green.png) 50% 50% no-repeat;
     background-size: 40px;
 
 }
@@ -47,7 +47,7 @@ body {
     bottom: 0;
     left: 0;
     transform: skewX(-50deg) translate(45px, 76px);
-    background: rgb(24, 24, 24) url(img/IPhone-text.png) 50% 50% no-repeat;
+    background: rgb(24, 24, 24) url(img/IPhone_Logo_green.png) 50% 50% no-repeat;
     background-size: 90px;   
 }
 
